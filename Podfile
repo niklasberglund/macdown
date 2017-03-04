@@ -12,7 +12,7 @@ target "MacDown" do
   pod 'M13OrderedDictionary', '~> 1.1'
   pod 'MASPreferences', '~> 1.1.3'  # Preference window.
   pod 'PAPreferences', '~> 0.4'     # Preference singleton (Locked until we drop 10.8 support).
-  pod 'Sparkle', '~> 1.13'          # Updater.
+  pod 'Sparkle', '~> 1.13', :configurations => ['Release'] # Updater.
 end
 
 target "MacDownTests" do
